@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       SGCA API
  * Plugin URI:        #
- * Description:       Display recent post from another WP website using WP REST API.
+ * Description:       Display recent post from another WP website by using WP REST API.
  * Version:           1.0.0
  * Author:            SGCArena
  * Author URI:        https://www.sgcarena.com
