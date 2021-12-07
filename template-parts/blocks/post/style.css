@@ -1,0 +1,69 @@
+.SGCA-API-post-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+.sgca-api-card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.sgca-api-container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+.sgca-api-img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.sgca-api-container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+.sgca-api-card1>.sgca-api-container:after{
+    background-image: linear-gradient(
+        135deg,
+        #0100ec,
+        #fb36f4
+    );
+}
+.sgca-api-details{
+    padding: 20px 10px;
+}
+.sgca-api-details> a {
+	text-decoration: none;
+}
+.sgca-api-details> a > h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.sgca-api-details>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.sgca-api-details>small{
+    color: #989898;
+    font-size: 12px;
+}
+.sgca-api-details small svg {
+    width: auto;
+    height: 12px;
+    fill: #929292;
+    stroke-width: 7px;
+    margin-right: 5px;
+    position: relative;
+    top: 0;
+    display: inline-block;
+}

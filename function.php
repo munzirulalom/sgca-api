@@ -10,7 +10,7 @@
  *
  * @link              #
  * @since             1.0.0
- * @package           Sgca_Api
+ * @package           SGCA_API
  *
  * @wordpress-plugin
  * Plugin Name:       SGCA API
@@ -25,9 +25,9 @@
  * Domain Path:       /languages
  */
 
-// If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-	die;
+// Disable direct file access.
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
 }
 
 /**
@@ -36,3 +36,9 @@ if ( ! defined( 'WPINC' ) ) {
  * Rename this for your plugin and update it as you release new versions.
  */
 define( 'SGCA_API_VERSION', '1.0.0' );
+
+/**
+ * Register Gutenbarg Block
+ * by help of ACF
+ * */
+require_once plugin_dir_path( __FILE__ ) . 'includes/register-blocks.php';
